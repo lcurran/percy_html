@@ -2,9 +2,6 @@ on:
   pull_request:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 jobs:
   name: CI
   build:
