@@ -1,5 +1,5 @@
 on:
-  push:
+  pull_request:
     branches:
       - main
 
@@ -17,4 +17,3 @@ jobs:
       - run: npx percy snapshot website/ # or any directory such as public/
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-g
